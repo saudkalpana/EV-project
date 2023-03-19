@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Gotham', sans-serif;
+    box-sizing: border-box;
 }
+/* top-nav-section */
 .nav{
     display: flex;
     position: fixed;
@@ -13,11 +15,10 @@
     top: 0;
 background-color:white;
 width: 100vw;
-z-index: 10;
-   
-   
+z-index: 10; 
 }
-.img{
+
+.EV-logo{
     margin-left: 20px;
     margin-top: 25px;
 }
@@ -38,7 +39,7 @@ z-index: 10;
 }
 .content ul{
     display: flex;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 30px;
     
 }
@@ -46,59 +47,53 @@ z-index: 10;
     padding: 7px;
     font-size: 15px;
     text-decoration: none;
-    color: black;
-    
+    color: black; 
 }
 .content ul a:hover{
     background: #add;
     color: #47AF71;
 }
-
-.list1{
-    background-color:#47AF71 ;
-}
 .icon-search{
-    
     margin-top: 35px;
     width: 20px;
     height: 20px;
     margin-left: 450px;
-
-}
-.vdo{
-    
-    
-   height: 550px;
-    background-image: url(vdos/ezgif.com-video-to-gif\ \(5\).gif);
-    background-size: cover;
-   
-}
+    font-size: 20px;
+    opacity: 0.5;
+} 
+/* body section */
+ .video-container video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
 .content1{
+    position: absolute;
+    top: 55%;
     text-align: center;
-    padding-top: 225px;
-    color: white;
+    color:white;
     font-size: 40px;
-    
-  
+    left: 30%;
 }
 
-.content1 h1 span{
+.content1 h2 span{
     color: #47AF71;
-    font-size: 50px;
-    
-    
+    font-size: 50px;   
 }
+
 .content1 p{
     margin: 0;
     font-size: 25px;
 }
-.my-button{
+
+.video-container .my-button{
     background-color: #47AF71;
     height: 50px;
     width: 280px;
-    margin-left:505px;
+   
     border-radius: 10px;
     margin-top: 75px;
+    
 }
 .my-button p{
     color: white;
@@ -119,133 +114,37 @@ z-index: 10;
     font-size: 15px;
     text-decoration: none;
     color: black;
-    
 }
 .nev2 ul a:hover{
     background: #add;
     color: #47AF71;
 }
-
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1200px;
-  max-height: 70%;
-  position: relative;
-  margin: auto;
-  background-image: linear-gradient(#FFFFFF, grey);
-  margin-top: 30px;
+.container1{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 10px;
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.swiper{
+    width: 100%;
+    height: fit-content;
 }
-.logo1{
-    padding-top: 30px;
-    padding-left: 30px;
-
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
 }
-.logo2{
-    padding-top: 30px;
-    padding-left: 30px;
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #FFFFFF;
 }
-.logo3{
-    padding-top: 30px;
-    padding-left: 30px;
-}
-.logo4{
-    padding-top: 30px;
-    padding-left: 30px;
-}
-.logo5{
-    padding-top: 30px;
-    padding-left: 30px;
-}
-.tesla-image{
-    height: 50%;
-    width: 50%;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.swiper .swiper-pagination-bullet-active{
+    background: white;
 }
 
 .compare-button{
     border-style: solid black;
-    
     height: 35px;
     width: 150px;
     text-align: center;
@@ -253,6 +152,7 @@ z-index: 10;
     border-radius: 10px;
     margin-top: 30px;
 }
+/* buttom-nav-section */
 .buttom-nev-bar{
     background-color: black;
     width: 100%;
@@ -260,7 +160,6 @@ z-index: 10;
     margin-top: 40px;
     display: flex;
     padding: 10px;
-
 }
 .nav-list ul {
     padding-top: 25px;
@@ -271,34 +170,40 @@ z-index: 10;
     padding: 15px;
     color:white;
     text-decoration: none;
-   
   }
-  /* .nav-list li a:hover {
-    background-color:#47AF71;
-    color: #fff;
-  } */
+
   .logo-EV{
     padding: 10px;
-    margin-left: 400px;
+    margin-left: 455px;
     margin-top: 30px;
-    
+  }
+  .logo-EV img{
+    height: 40px;
+    width: 160px;
   }
   .CR{
+
     margin-top: 20px;
-  }
-  .logo-EV p{
-color: white;
-padding-left: 40px;
-  }
-  .social-media-icons{
-    margin-left: 280px;
-    margin-top: 30px;
-    size: 20px;
-  }
-  .social-media-icons h3{
     color: white;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
+  .social-media-icons{
+    margin-left: 350px;
+    margin-top: 30px;
+    size: 10px;
+  }
+  .social-media-icons img{
+    padding: 5px;
+  }
+  .social-media-icons h4{
+    color: white;
+    margin-left: 8px;
   }
   .social-media-icons p{
     color: white;
+    font-size: 12px;
+    margin: 5px 8px;
   }
   
