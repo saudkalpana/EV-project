@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/0133e98403.css" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">          
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="img">
+           <img src="assests/logo2.png" alt="">
+        </div>
+        <div class="icon-location">
+            <img src="./assests/location.png" alt="">
+        </div>
+      
+        <div class="address">
+            <p>Nearest Charging Station</p>
+            <h2>Kathmandu</h2>
+        </div>
+
+        <div class="content">
+            <ul>
+
+                <a href="">Home</a>
+                <a href="">EV Finder</a>
+                <a href="">Compare</a>
+                <a href="">Brouse</a>
+            </ul>
+        </div>
+        <div class="icon-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+
+    </div>
+   
+    <div class="vdo">
+        <div class="content1">
+            <h2>Compare<span> & </span>Drive</h2>
+            <p>Away The Best EV For You</p>
+        </div>
+
+           <button class="my-button">
+            
+            <p>Why Choose EV?</p></button>
+    </div>
+    <div class="Info-section">
+        <h1>Top Selling EVs Of 2022</h1>
+        <div class="nev2">
+            <ul>
+                <a href="">Car</a>
+                <a href="">Bike</a>
+                <a href="">Scooter</a>
+            </ul>
+        </div>
+    </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="logo1">
+        <img src="assests/tesla-logo.png">
+      </div>
+      <!-- <div class="tasla-image"></div> -->
+      <img src="assests/taslaaaa.png" style="width:100%">
+      <div class="text">Tesla Model 3</div>
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="logo2">
+            <img src="assests/taycan-logo.png">
+          </div>
+      <img src="assests/tayan.png" style="width:100%">
+      <div class="text">Porsche Tayan</div>
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="logo3">
+            <img src="assests/e-tron-logo.png">
+          </div>
+      <img src="assests/car1.png" style="width:100%">
+      <div class="text">Audi e-tron GT</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="logo4">
+            <img src="assests/bmw-logo.png">
+          </div>
+        <img src="assests/car3.png" style="width:100%">
+        <div class="text">BMW ix</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="logo5">
+            <img src="assests/renault-logo.png">
+          </div>
+        <img src="assests/car4.png" style="width:100%">
+        <div class="text">Renault</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+    <button class="compare-button">
+    <p>Compare</p></button>
+    </div>
+    <div class="buttom-nev-bar">
+        <div class="nav-list">
+            <ul>
+    
+                <li><a href="">Home</a></li>
+                <li><a href="">EV Finder</a></li>
+                <li><a href="">Compare</a></li>
+                <li><a href="">Brouse</a></li>
+                <li><a href="">News</a></li>
+            </ul>
+        </div>
+        
+        <div class="logo-EV">
+          <img src="assests/evlogo.png" alt=""><br>
+          <div class="CR">
+            <img src="assests/Vector.png">
+            <p>All Right Reserved 2023</p>
+          </div>
+       </div>
+       <div class="social-media-icons">
+        <img src="assests/🦆 icon _Facebook_.png">
+        <img src="assests/🦆 icon _Instagram_.png">
+        <img src="assests/🦆 icon _Twitter_.png">
+        <img src="assests/🦆 icon _YouTube_.png">
+        <h3>Waterflow Technology</h3>
+        <p>Kathmandu Nepal</p>
+       
+        </div>
+       </div>
+     
+      
+      
+    </div>
+    
+    
+<script src="https://kit.fontawesome.com/0133e98403.js" crossorigin="anonymous"></script
+</body> 
+</html> 
